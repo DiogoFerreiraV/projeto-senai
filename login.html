@@ -16,12 +16,13 @@
                 <img style="height: 80px; width: 230px;" src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-3-599x154.png" alt="logo SENAI" width="30%">
 
             </div>
-            <div class="busca">
+            <form action="#">
+                <label for="searchfor">Procure por nome ou marca...</label>
+                <input type="search" id="searchfor">
+                <input type="button" value="Procurar">
 
-                <textarea name="Pesquise por nome ou marca..." id="pesquisar" placeholder="Pesquise por nome ou marca..."></textarea>
-                <button class="botaopesquisar">Procurar</button>
-
-            </div>
+            </form>
+            
             <nav id="login">
 
                 <a href="login.html">Entre/Cadastre-se</a>
@@ -50,20 +51,29 @@
 
         </header>
         <section>
+            <form action="#" method="post"
 
-            <p id="entrar"><strong>Entrar</strong></p>
-            <textarea name="email" id="email" placeholder="E-mail"></textarea>
-            <textarea name="senha" id="senha" placeholder="Senha"></textarea>
-            <button class="botaoentrar">Continuar</button>
+                <p id="entrar"><strong>Entrar</strong></p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" minlength="8" required>
+                <input type="button" value="Continuar">
 
-            <p id="cadastre-se"><strong>Criar conta</strong></p>
-            <textarea name="digiteumemail" id="digiteumemail" placeholder="Digite um e-mail"></textarea>
-            <textarea name="criarsenha" id="criarsenha" placeholder="Digite uma senha"></textarea>
-            <button class="botaocadastrar">Continuar</button>
+                <p id="criarconta"><strong>Criar conta</strong></p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+                <label for="createpassword">Criar senha</label>
+                <input type="password" id="createpassword" minlength="8" required>
+                <label for="confirmpassword">Confirmar senha</label>
+                <input type="password" id="confirmpassword" minlength="8" required>
+                <input type="button" value="Criar">
+
+            </form>
 
             <nav id="usarredessociais">
                 <p>Use sua rede social para se conectar*</p>
-                <a href="#">Rede social1</a>
+                <a style="margin:20px;" href="#">Rede social1</a>
                 <a href="#">Rede social2</a>
                 
             </nav>
